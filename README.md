@@ -1,2 +1,2 @@
 # FlorEliteExperienceYate
-📅 Reto Flor Elite Experience (15 días) nos vamos al Yate
+📅 Reto Flor Elite Experience (15 días)

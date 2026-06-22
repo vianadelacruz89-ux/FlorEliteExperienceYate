@@ -8,37 +8,13 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/tabler-icons.min.css">
 
 <style>
-* { box-sizing: border-box; margin: 0; padding: 0; }
-.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
-
-/* ===== TU CSS COMPLETO (SIN CAMBIOS) ===== */
-:root{
-  --border-radius-lg:16px;
-  --border-radius-md:12px;
-  --color-border-tertiary:rgba(255,255,255,0.12);
-  --color-border-secondary:rgba(255,255,255,0.2);
-  --color-text-primary:#fff;
-  --color-text-secondary:rgba(255,255,255,0.6);
-  --color-text-tertiary:rgba(255,255,255,0.4);
-  --color-background-primary:#111;
-  --color-background-secondary:#1a1a1a;
-}
-
-body{background:#0b0b0b;font-family:Arial;color:#fff}
+body{background:#0b0b0b;color:#fff;font-family:Arial}
 .container{padding:16px}
 
-/* --- PEGA AQUÍ TU CSS ORIGINAL TAL CUAL --- */
-/* (lo mantuve base para no romperte diseño) */
-
-/* HERO */
-.hero{background:#0f0f0f;border-radius:16px;padding:1.5rem;margin-bottom:1rem;display:flex;justify-content:space-between;flex-wrap:wrap}
-.hero-left h1{font-size:22px}
-.hero-left span{color:#fe2c55}
-
 /* TABS */
-.tabs{display:flex;gap:8px;margin:12px 0}
+.tabs{display:flex;gap:8px;margin-bottom:12px}
 .tab{padding:8px 14px;border:1px solid #333;border-radius:10px;cursor:pointer}
-.tab.active{background:#fe2c55;color:#fff;border:none}
+.tab.active{background:#fe2c55;border:none}
 
 /* PANELS */
 .panel{display:none}
@@ -55,9 +31,6 @@ input{width:100%;padding:10px;border-radius:8px;border:1px solid #333;background
 .radio-opt{padding:10px;border:1px solid #333;border-radius:10px;cursor:pointer}
 .radio-opt.selected{border-color:#fe2c55}
 
-.upload-row{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
-.upload-item{border:1px dashed #444;padding:10px;text-align:center;border-radius:10px}
-
 .submit-btn{width:100%;padding:12px;background:#fe2c55;border:none;color:#fff;border-radius:10px;cursor:pointer}
 
 .success-state{display:none;text-align:center;padding:20px}
@@ -68,13 +41,6 @@ input{width:100%;padding:10px;border-radius:8px;border:1px solid #333;background
 
 <div class="container">
 
-<!-- HERO -->
-<div class="hero">
-  <div class="hero-left">
-    <h1>Reto Flor <span>Elite</span> Experience</h1>
-  </div>
-</div>
-
 <!-- TABS -->
 <div class="tabs">
   <div class="tab active" onclick="switchTab('starter')">Starter</div>
@@ -83,69 +49,173 @@ input{width:100%;padding:10px;border-radius:8px;border:1px solid #333;background
   <div class="tab" onclick="switchTab('inscripcion')">Inscripción</div>
 </div>
 
-<!-- PANELS (RESUMIDOS TUYOS SIN ROMPER DISEÑO) -->
+---
+
+# 🟢 STARTER CREATOR
+
 <div id="panel-starter" class="panel active">
-  <div class="card">Starter Content</div>
+
+<div class="card">
+<h2>Starter Creator</h2>
+<p>Quieren entrar al programa piloto</p>
 </div>
+
+<div class="card">
+<h3>Se mide</h3>
+<ul>
+<li>Seguidores ganados durante el reto</li>
+<li>Videos publicados durante el reto</li>
+<li>Visualizaciones obtenidas durante el reto</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Fórmula</h3>
+<p>50% Seguidores</p>
+<p>30% Vistas</p>
+<p>20% Consistencia</p>
+</div>
+
+<div class="card">
+<h3>Ejemplo</h3>
+<ul>
+<li>+500 seguidores</li>
+<li>30,000 vistas</li>
+<li>30 videos publicados</li>
+</ul>
+</div>
+
+</div>
+
+---
+
+# 🔵 TIKTOK GROW
 
 <div id="panel-grow" class="panel">
-  <div class="card">Grow Content</div>
+
+<div class="card">
+<h2>TikTok Grow</h2>
+<p>Ya están en el programa piloto</p>
 </div>
+
+<div class="card">
+<h3>Se mide</h3>
+<ul>
+<li>Ventas generadas</li>
+<li>GMV generado</li>
+<li>Videos publicados</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Fórmula</h3>
+<p>50% Ventas</p>
+<p>30% GMV</p>
+<p>20% Consistencia</p>
+</div>
+
+</div>
+
+---
+
+# 🟡 ELITE
 
 <div id="panel-elite" class="panel">
-  <div class="card">Elite Content</div>
+
+<div class="card">
+<h2>Elite</h2>
+<p>Ya venden regularmente en TikTok Shop</p>
 </div>
 
-<!-- INSCRIPCIÓN (SOLO UNA - CRM REAL) -->
+<div class="card">
+<h3>Se mide</h3>
+<p><b>Crecimiento porcentual (clave)</b></p>
+</div>
+
+<div class="card">
+<h3>Ejemplo</h3>
+
+<p><b>Alumna A</b></p>
+<ul>
+<li>Antes: $1,000</li>
+<li>Durante: $1,500</li>
+<li>Crecimiento: 50%</li>
+</ul>
+
+<p><b>Alumna B</b></p>
+<ul>
+<li>Antes: $5,000</li>
+<li>Durante: $6,000</li>
+<li>Crecimiento: 20%</li>
+</ul>
+
+<p><b>Gana A por mayor crecimiento</b></p>
+</div>
+
+<div class="card">
+<h3>Fórmula</h3>
+<p>60% Crecimiento % GMV</p>
+<p>30% Ventas</p>
+<p>10% Consistencia</p>
+</div>
+
+</div>
+
+---
+
+# 🟣 INSCRIPCIÓN + GOOGLE SHEETS CRM
+
 <div id="panel-inscripcion" class="panel">
 
-  <form id="inscripcionForm">
+<form id="inscripcionForm">
 
-    <div class="card">
-      <h3>Datos básicos</h3>
+<div class="card">
+<h3>Datos básicos</h3>
 
-      <div class="form-row">
-        <input name="nombre" type="text" placeholder="Nombre completo" required>
-        <input name="tiktok" type="text" placeholder="@TikTok" required>
-      </div>
+<div class="form-row">
+<input name="nombre" placeholder="Nombre completo" required>
+<input name="tiktok" placeholder="@TikTok" required>
+</div>
 
-      <div class="form-row">
-        <input name="email" type="email" placeholder="Email" required>
-        <input name="whatsapp" type="text" placeholder="WhatsApp" required>
-      </div>
-    </div>
+<div class="form-row">
+<input name="email" placeholder="Email" required>
+<input name="whatsapp" placeholder="WhatsApp" required>
+</div>
+</div>
 
-    <div class="card">
-      <h3>Categoría</h3>
+<div class="card">
+<h3>Categoría</h3>
 
-      <div class="radio-group">
-        <div class="radio-opt selected" onclick="setCat(this,'starter')">Starter</div>
-        <div class="radio-opt" onclick="setCat(this,'grow')">Grow</div>
-        <div class="radio-opt" onclick="setCat(this,'elite')">Elite</div>
-      </div>
-    </div>
+<div class="radio-group">
+<div class="radio-opt selected" onclick="setCat(this,'starter')">Starter Creator</div>
+<div class="radio-opt" onclick="setCat(this,'grow')">TikTok Grow</div>
+<div class="radio-opt" onclick="setCat(this,'elite')">Elite</div>
+</div>
+</div>
 
-    <div class="card">
-      <h3>Capturas</h3>
+<div class="card">
+<h3>Capturas obligatorias</h3>
+<input type="file" name="seguidores" required>
+<input type="file" name="gmv">
+<input type="file" name="nivel" required>
+</div>
 
-      <input name="seguidores" type="file" required>
-      <input name="gmv" type="file" required>
-      <input name="nivel" type="file" required>
-    </div>
+<button class="submit-btn" type="submit">
+Confirmar inscripción
+</button>
 
-    <button class="submit-btn" type="submit">
-      Confirmar inscripción
-    </button>
+</form>
 
-  </form>
-
-  <div class="success-state" id="success">
-    <h2>✔ Inscripción enviada</h2>
-  </div>
-
+<div class="success-state" id="success">
+<h2>✔ Inscripción enviada</h2>
+<p>Tu línea de partida fue registrada</p>
 </div>
 
 </div>
+
+</div>
+
+---
 
 <script>
 function switchTab(tab){
@@ -156,12 +226,12 @@ function switchTab(tab){
   event.target.classList.add('active');
 }
 
-let categoria = "starter";
+let categoria="starter";
 
 function setCat(el,val){
   document.querySelectorAll('.radio-opt').forEach(r=>r.classList.remove('selected'));
   el.classList.add('selected');
-  categoria = val;
+  categoria=val;
 }
 
 /* ===== GOOGLE SHEETS CRM ===== */
@@ -171,28 +241,23 @@ const scriptURL = "https://script.google.com/macros/s/AKfycbwc4VfVSTI5CUXxPaTxhx
 document.getElementById("inscripcionForm").addEventListener("submit", async (e)=>{
   e.preventDefault();
 
-  const f = e.target;
-  const fd = new FormData();
+  const f=e.target;
+  const fd=new FormData();
 
-  fd.append("nombre", f.nombre.value);
-  fd.append("tiktok", f.tiktok.value);
-  fd.append("email", f.email.value);
-  fd.append("whatsapp", f.whatsapp.value);
-  fd.append("categoria", categoria);
+  fd.append("nombre",f.nombre.value);
+  fd.append("tiktok",f.tiktok.value);
+  fd.append("email",f.email.value);
+  fd.append("whatsapp",f.whatsapp.value);
+  fd.append("categoria",categoria);
 
-  fd.append("seguidores", f.seguidores.files[0]);
-  fd.append("gmv", f.gmv.files[0]);
-  fd.append("nivel", f.nivel.files[0]);
+  fd.append("seguidores",f.seguidores.files[0]);
+  fd.append("gmv",f.gmv.files[0]);
+  fd.append("nivel",f.nivel.files[0]);
 
   try{
-    await fetch(scriptURL,{
-      method:"POST",
-      body:fd
-    });
-
+    await fetch(scriptURL,{method:"POST",body:fd});
     f.style.display="none";
     document.getElementById("success").style.display="block";
-
   }catch(err){
     alert("Error enviando formulario");
     console.log(err);
